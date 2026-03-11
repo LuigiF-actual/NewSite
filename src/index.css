@@ -1,1 +1,28 @@
 @import "tailwindcss";
+/* 
+@layer (
+
+    .box_of_text {
+        @apply 
+            border-slate-800 
+            bg-slate-900
+            border-4
+            z-10 
+            bg-[image:repeating-linear-gradient(315deg, _var(--pattern-fg)_0, _var(--pattern-fg)_1px, _transparent_0, _transparent_50%)]
+            bg-[size:10px_10px]
+            bg-fixed
+            [--pattern-fg:var(--color-slate-950)]/5
+            max-lg:hidden dark:[--pattern-fg:var(--color-white)]/10;
+    }
+) */
+
+@layer components {
+  .BoxOfText {
+    @apply  border-amber-50/25 border-4 rounded-4xl z-10 bg-slate-900/85
+           bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)]
+           bg-[size:5px_5px] bg-fixed
+           [--pattern-fg:var(--color-slate-950)]/5
+           max-lg:hidden
+           dark:[--pattern-fg:var(--color-white)]/10;
+  }
+}
