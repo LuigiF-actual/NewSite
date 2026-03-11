@@ -1,12 +1,16 @@
 import Nav_bar from "../NavBar/NavBar";
 import Header from "../Header/Header";
 
-import PythonLogo from "/image/pythonLogo.svg"
-import MySqlLogo from "/image/mysqlLogo.svg"
+import { DiPython } from "react-icons/di";
+import { SiMysql } from "react-icons/si";
 import CppLogo from "/image/c++Logo.svg"
-import JSlogo from "/image/javascriptLogo.svg"
-import NumpyLogo from "/image/numpy.svg"
-import UbuntuLogo from "/image/ubuntuLogo.svg"
+import { FaJsSquare } from "react-icons/fa";
+import { FaUbuntu } from "react-icons/fa";
+import { SiNumpy } from "react-icons/si";
+import { SiCisco } from "react-icons/si";
+
+import { AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
 
 const Body = () => {
 
@@ -87,7 +91,7 @@ const Title = () => {
           Luigi Frondana
         </h1>
         <h1 className="font-extrabold text-white text-3xl underline decoration-orange-500 mt-4">
-          Web developer
+          Junior developer
         </h1>
       </div>
     </div>
@@ -122,10 +126,14 @@ const Description = () => {
 const ContactMe = () => {
   return (
     <div className="col-start-2 row-span-1 row-start-4 col-span-2 BoxOfText">
-        <h1 className=" text-white text-3xl p-4">
-          Contact me:
+        <h1 className=" font-bold text-white text-3xl p-4 pb-0 font-[Roboto] text-center">
+          See more
         </h1>
         <div className="border-t border-orange-500 my-1 border-2 min-w-full"></div>
+        <div className="flex items-center justify-center gap-2.5 max-w-fill max-h-full">
+          <a href="https://github.com/LuigiF-actual"> <AiFillGithub className="size-20 fill-white hover:fill-orange-500 transition-colors duration-300"/> </a>
+          <a href="https://github.com/LuigiF-actual"> <AiFillLinkedin className=" fill-white size-20 hover:fill-orange-500 transition-colors duration-300"/> </a>
+        </div>
     </div>
   );
 }
@@ -142,31 +150,20 @@ const Technologies = () => {
 
       </section>
 
-      <section className=" flex flex-wrap justify-center mt-3">
+      <section className=" flex flex-wrap gap-2 justify-center mt-3 p-3">
 
+        <DiPython className=" fill-blue-500 size-22"/>
+        <SiMysql className=" fill-orange-500 size-21"/>
+        
         <div className="w-20 h-20 flex items-center justify-center">
-          <img src={PythonLogo} className="w-full h-full object-contain scale-100" alt="Python" />
+          <img src={CppLogo} className="w-full h-full object-contain scale-155" alt="C++" />
         </div>
 
-        <div className="w-20 h-20 flex items-center justify-center">
-          <img src={MySqlLogo} className="w-full h-full object-contain scale-125" alt="MySQL" />
-        </div>
+        <FaJsSquare className=" fill-yellow-300 size-20"/>
+        <FaUbuntu className=" fill-orange-500 size-20"/>
+        <SiNumpy className=" fill-blue-500 size-20"/>
+        <SiCisco className=" fill-white size-23"/>
 
-        <div className="w-20 h-20 flex items-center justify-center">
-          <img src={CppLogo} className="w-full h-full object-contain scale-150" alt="C++" />
-        </div>
-
-        <div className="w-20 h-20 flex items-center justify-center">
-          <img src={JSlogo} className="w-full h-full object-contain scale-95" alt="JS" />
-        </div>
-
-        <div className="w-20 h-20 flex items-center justify-center">
-          <img src={NumpyLogo} className="w-full h-full object-contain scale-95" alt="JS" />
-        </div>
-
-        <div className="w-20 h-20 flex items-center justify-center">
-          <img src={UbuntuLogo} className="w-full h-full object-contain scale-85" alt="JS" />
-        </div>
 
       </section>
     </div>
