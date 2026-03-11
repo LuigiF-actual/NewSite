@@ -1,5 +1,8 @@
 # Portfolio Site
 
+###Created with:
+- react
+- tailwind
 
 # React + Vite
 
