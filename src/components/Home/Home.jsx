@@ -15,7 +15,7 @@ const Home = () => {
 
     return (
 
-        <div className="z-10 flex flex-col lg:flex-row gap-4 px-4 lg:px-40 w-full border-2 border-amber-50 ">
+        <div className="z-10 flex flex-col lg:flex-row gap-4 px-4 lg:px-40">
 
             <div className=" flex flex-col gap-4 lg:w-1/2">
                 <Title />
@@ -23,7 +23,7 @@ const Home = () => {
                 <ContactMe />
             </div>
 
-            <div className=" flex flex-col gap-4 lg:w-1/2">
+            <div className="z-10 flex flex-col gap-4 w-fit items-center justify-center">
                 <Description />
                 <PhotoHolder />
             </div>
@@ -39,8 +39,8 @@ export default Home;
 const PhotoHolder = () => {
 
     return (
-        <div className="z-10 col-start-4 col-span-2 row-start-2 row-span-2 p-4 BoxOfText relative">
-            <div className="flex justify-center relative">
+        <div className="z-10 p-4 BoxOfText">
+            <div className="flex justify-center mr-10 ml-10">
                 <img src={Myphoto} alt="my photo" className="h-80 w-57 border-slate-500/60 border-4 rounded-3xl" />
             </div>
         </div>
@@ -49,13 +49,13 @@ const PhotoHolder = () => {
 
 const Title = () => {
     return (
-        <div className="relative text-center col-start-2 col-span-2 row-start-1 BoxOfText font-[Roboto]">
+        <div className="relative text-center BoxOfText font-[Roboto]">
             <div className="p-4">
                 <h1 className="font-extrabold text-white text-4xl text-nowrap">
                     Luigi Frondana
                 </h1>
                 <h1 className="font-extrabold text-white text-3xl underline decoration-orange-500 mt-4">
-                    Junior developer
+                    Junior Developer
                 </h1>
             </div>
         </div>
@@ -66,7 +66,7 @@ const Description = () => {
 
     return (
 
-        <div className="relative col-start-4 col-span-2 row-start-1 row-span-1">
+        <div className="relative">
             <div className="relative BoxOfText">
                 <section className=" text-white font-[Roboto] p-4">
                     <h1 className=" text-3xl font-extrabold">
@@ -89,14 +89,14 @@ const Description = () => {
 
 const ContactMe = () => {
     return (
-        <div className="col-start-2 row-span-1 row-start-4 col-span-2 BoxOfText">
+        <div className="BoxOfText">
             <h1 className=" font-bold text-white text-3xl p-1 pb-0 font-[Roboto] text-center">
                 See more
             </h1>
             <div className="border-t border-orange-500 my-1 border-2 min-w-full"></div>
             <div className="flex items-center justify-center gap-2.5 max-w-fill max-h-full">
                 <a href="https://github.com/LuigiF-actual"> <AiFillGithub className="size-20 fill-white hover:fill-orange-500 hover:scale-110  transition-all duration-300" /> </a>
-                <a href="https://github.com/LuigiF-actual"> <AiFillLinkedin className=" fill-white size-20 hover:fill-orange-500 hover:scale-110 transition-all duration-300" /> </a>
+                <a href="https://www.linkedin.com/in/luigi-frondana"> <AiFillLinkedin className=" fill-white size-20 hover:fill-orange-500 hover:scale-110 transition-all duration-300" /> </a>
             </div>
         </div>
     );
@@ -104,7 +104,7 @@ const ContactMe = () => {
 
 const Technologies = () => {
     return (
-        <div className="col-start-2 col-span-2 row-start-2 row-span-2 BoxOfText font-[Roboto]" >
+        <div className="BoxOfText font-[Roboto]" >
             <section className="flex flex-col justify-center items-center text-white text-3xl">
 
                 <h1 className="font-extrabold  mt-2 tracking-tight">

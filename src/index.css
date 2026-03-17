@@ -25,4 +25,9 @@
            max-lg:hidden
            dark:[--pattern-fg:var(--color-white)]/10;
   }
+
+  .nav-bar-btn {
+    @apply w-fit mx-1 p-1 px-4 rounded-3xl
+           transition delay-75 duration-200 ease-in-out hover:bg-gray-400 not-hover:bg-white
+  }
 }
