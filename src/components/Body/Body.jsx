@@ -15,14 +15,14 @@ const Body = () => {
 
   return (
     /* { <PageContext.Provider value={{ page, setPage }}> }*/
-    <div className="h-screen w-screen overflow-hidden relative">
+    <div className="h-screen w-screen overflow-hidden relative bg-scroll">
       <PageContext.Provider value={{user, setUser}}>
         <BackGround />
         <Header user={user}/>
-        <div className="z-10 relative">
+        <div className="z-10 relative h-[calc(100vh-4rem)]">
           <Content />
         </div>
-        <h1 className="z-10 absolute text-3xl text-amber-50">Me here + {`${user}`}</h1>
+       {/*  <h1 className="z-10 absolute text-3xl text-amber-50">Me here + {`${user}`}</h1> */}
       </PageContext.Provider>
     </div>
     /* </PageContext.Provider> */

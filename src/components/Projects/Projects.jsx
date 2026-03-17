@@ -4,12 +4,18 @@ import PongGamePNG from "/image/Project/PongTest.png"
 const Projects = () => {
 
     return (
-        <>
+        <div className="h-full overflow-y-auto
+                        scrollbar-thumb-rounded-full 
+                        scrollbar-track-rounded-full scrollbar 
+                        scrollbar-thumb-slate-700 
+                        scrollbar-track-slate-300
+                        pb-10
+                        ">
             <div className=" flex justify-center gap-10">
                 <FirstColunm />
                 <SecondColunm />
             </div>
-        </>
+        </div>
     )
 
 }
@@ -21,12 +27,8 @@ const FirstColunm = () => {
     return (
         <div className="flex flex-col gap-10">
             <ProjectShowCase Name={"Pong Game C++"} />
-            <div className="BoxOfText">
-                <h1 className=" text-3xl"> AAAAAAAAAAAAA</h1>
-            </div>
-            <div className="BoxOfText">
-                <h1 className=" text-3xl"> AAAAAAAAAAAAA</h1>
-            </div>
+            <ProjectShowCase Name={"Pong Game C++"} />
+            <ProjectShowCase Name={"Pong Game C++"} />
         </div>
     )
 }
@@ -35,15 +37,8 @@ const SecondColunm = () => {
 
     return (
         <div className="flex flex-col gap-10">
-            <div className="BoxOfText">
-                <h1 className=" text-3xl"> AAAAAAAAAAAAA</h1>
-            </div>
-            <div className="BoxOfText">
-                <h1 className=" text-3xl"> AAAAAAAAAAAAA</h1>
-            </div>
-            <div className="BoxOfText">
-                <h1 className=" text-3xl"> AAAAAAAAAAAAA</h1>
-            </div>
+            <ProjectShowCase Name={"Pong Game C++"} />
+            <ProjectShowCase Name={"Pong Game C++"} />
         </div>
     )
 }

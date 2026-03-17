@@ -6,6 +6,7 @@ import { FaJsSquare } from "react-icons/fa";
 import { FaUbuntu } from "react-icons/fa";
 import { SiNumpy } from "react-icons/si";
 import { SiCisco } from "react-icons/si";
+import { SiPandas } from "react-icons/si";
 
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
@@ -16,15 +17,15 @@ const Home = () => {
 
     return (
 
-        <div className="z-10 flex flex-col lg:flex-row gap-4 px-4 lg:px-40">
+        <div className=" z-10 flex flex-col items-center justify-center pt-10  h-full lg:flex-row gap-4 px-4 lg:px-40">
 
-            <div className=" flex flex-col gap-4 lg:w-1/2">
+            <div className=" flex flex-col gap-4 h-full lg:w-1/2 ">
                 <Title />
                 <Technologies />
                 <ContactMe />
             </div>
 
-            <div className="z-10 flex flex-col gap-4 w-fit items-center justify-center">
+            <div className="z-10 flex flex-col gap-4 w-fit  ">
                 <Description />
                 <PhotoHolder />
             </div>
@@ -76,7 +77,7 @@ const Description = () => {
                     <div className="border-t border-orange-500 my-1 border-2 min-w-full"></div>
                     <ul className=" mt-5 text-xl">
                         <li> - 20-year-old Systems Administration student (ASIX) </li>
-                        <li> - Fluent in 4 languages </li>
+                        <li> - Speak in 4 languages </li>
                         <li> - Experience with web-based projects </li>
                         <li> - Python (Pandas, NumPy), C++, MySQL </li>
                     </ul>
@@ -115,7 +116,7 @@ const Technologies = () => {
 
             </section>
 
-            <section className=" flex flex-wrap gap-2 justify-center mt-3 p-3">
+            <section className=" flex flex-wrap gap-3 justify-center p-3">
 
                 <DiPython className=" fill-blue-500 size-22" />
                 <SiMysql className=" fill-orange-500 size-21" />
@@ -126,9 +127,9 @@ const Technologies = () => {
 
                 <FaJsSquare className=" fill-yellow-300 size-20" />
                 <FaUbuntu className=" fill-orange-500 size-20" />
+                <SiCisco className=" fill-white size-20" />
                 <SiNumpy className=" fill-blue-500 size-20" />
-                <SiCisco className=" fill-white size-23" />
-
+                <SiPandas className=" fill-white size-20 "/>
 
             </section>
         </div>
