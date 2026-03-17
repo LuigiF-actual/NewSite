@@ -1,10 +1,11 @@
 import React, {useState, use, useContext} from "react";
-import Header from "../Header/Header";
+import { PageContext } from "../Context/PageContext";
 
+import Header from "../Header/Header";
 import Home from "../Home/Home";
 import Projects from "../Projects/Projects";
 
-import { PageContext } from "../Context/PageContext";
+
 
 const Body = () => {
 

@@ -1,3 +1,4 @@
+
 import { DiPython } from "react-icons/di";
 import { SiMysql } from "react-icons/si";
 import CppLogo from "/image/c++Logo.svg"
@@ -49,7 +50,7 @@ const PhotoHolder = () => {
 
 const Title = () => {
     return (
-        <div className="relative text-center BoxOfText font-[Roboto]">
+        <div className="relative text-center BoxOfText ">
             <div className="p-4">
                 <h1 className="font-extrabold text-white text-4xl text-nowrap">
                     Luigi Frondana
@@ -68,7 +69,7 @@ const Description = () => {
 
         <div className="relative">
             <div className="relative BoxOfText">
-                <section className=" text-white font-[Roboto] p-4">
+                <section className=" text-white p-4">
                     <h1 className=" text-3xl font-extrabold">
                         About me:
                     </h1>
@@ -90,7 +91,7 @@ const Description = () => {
 const ContactMe = () => {
     return (
         <div className="BoxOfText">
-            <h1 className=" font-bold text-white text-3xl p-1 pb-0 font-[Roboto] text-center">
+            <h1 className=" font-bold text-white text-3xl p-1 pb-0  text-center">
                 See more
             </h1>
             <div className="border-t border-orange-500 my-1 border-2 min-w-full"></div>
@@ -104,7 +105,7 @@ const ContactMe = () => {
 
 const Technologies = () => {
     return (
-        <div className="BoxOfText font-[Roboto]" >
+        <div className="BoxOfText " >
             <section className="flex flex-col justify-center items-center text-white text-3xl">
 
                 <h1 className="font-extrabold  mt-2 tracking-tight">
